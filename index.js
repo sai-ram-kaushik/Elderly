@@ -22,7 +22,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 const { authorization } = require("./middleware/middleware");
-app.use(cors());
+app.use(cors({origin: '*'}));
 
 // Importing routes
 const userRoutes = require("./routes/userRoutes");
