@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
+const cors = require("cors");
 require("dotenv").config();
 
 // Connecting to database
@@ -21,6 +22,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 const { authorization } = require("./middleware/middleware");
+app.use(cors({origin: '*'}));
 
 // Importing routes
 const userRoutes = require("./routes/userRoutes");
