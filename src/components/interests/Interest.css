@@ -1,0 +1,13 @@
+.interests{
+    background-color: var(--cardColor);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.chips{
+    display: flex;
+    flex-wrap: wrap;
+}
+.intrest_list{
+    list-style-type: none;
+
+}

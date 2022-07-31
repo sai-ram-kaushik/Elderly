@@ -1,20 +1,24 @@
 import "./App.css";
 import styled from "styled-components";
 import { AccountBox } from "./components/accountBox";
+import Index from "./components/indexPage/Index";
+import Home from "./pages/home/Home";
+import { BrowserRouter } from "react-router-dom";
+import { Route, Routes} from 'react-router-dom';
 
 const AppContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
 `;
 
 function App() {
   return (
-    <AppContainer>
-      <AccountBox />
+    <AppContainer className="App">
+      <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Index />}/>
+          <Route path="/home" element={<Home />}/>
+        </Routes>
+      </BrowserRouter>
     </AppContainer>
   );
 }

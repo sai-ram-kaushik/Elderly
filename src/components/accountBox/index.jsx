@@ -15,6 +15,7 @@ const BoxContainer = styled.div`
   box-shadow: 0 0 2px rgba(15, 15, 15, 0.28);
   position: relative;
   overflow: hidden;
+  bottom: 4rem;
 `;
 
 const TopContainer = styled.div`
@@ -49,6 +50,8 @@ const HeaderContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  bottom: 125px
 `;
 
 const HeaderText = styled.h2`
@@ -70,10 +73,12 @@ const SmallText = styled.h5`
 `;
 
 const InnerContainer = styled.div`
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  padding: 0 1.8em;
+  padding: 0 1em;
+  position: relative;
+  bottom: 50px; 
 `;
 
 const backdropVariants = {
