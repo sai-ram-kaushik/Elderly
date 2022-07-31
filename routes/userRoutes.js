@@ -13,6 +13,7 @@ router.get("/", authorization, async (req, res, next) => {
   try {
     let user = await User.findById(req._id);
     delete user._id;
+    delete user.password;
     res.status(200).json(user);
   } catch (error) {
     next(error);
