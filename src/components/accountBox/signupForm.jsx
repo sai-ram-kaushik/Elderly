@@ -14,7 +14,7 @@ import { AccountContext } from "./accountContext";
 export function SignupForm(props) {
   const { switchToSignin } = useContext(AccountContext);
   const [user, setUser] = useState({
-    name: "", email: "", country: "", city: "", password: "", conform_password: ""
+    name: "", email: "",  password: "", conform_password: ""
   });
   let name, value;
   const handleInputs = (e) => {

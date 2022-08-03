@@ -1,6 +1,9 @@
 import React from 'react'
 import Cover from '../../images/cover.jpg'
 import Profile from '../../images/profileImg.jpg'
+import EditProfile from '../editProfile/EditProfile'
+import { BrowserRouter } from "react-router-dom";
+import { Route, Routes} from 'react-router-dom';
 import './Profilecard.css'
 const ProfileCard = () => {
   return (

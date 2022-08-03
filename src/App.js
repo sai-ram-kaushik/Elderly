@@ -5,6 +5,7 @@ import Index from "./components/indexPage/Index";
 import Home from "./pages/home/Home";
 import { BrowserRouter } from "react-router-dom";
 import { Route, Routes} from 'react-router-dom';
+// import EditProfile from "./components/editProfile/EditProfile";
 
 const AppContainer = styled.div`
 
@@ -17,6 +18,7 @@ function App() {
       <Routes>
           <Route path="/" element={<Index />}/>
           <Route path="/home" element={<Home />}/>
+          {/* <Route path="/edit" element={<EditProfile />}/> */}
         </Routes>
       </BrowserRouter>
     </AppContainer>

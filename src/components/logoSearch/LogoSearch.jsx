@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../../images/logo1.png'
-import {BsSearch} from 'react-icons/bs'  
+// import {BsSearch} from 'react-icons/bs'  
 import './LogoSearch.css'
 const LogoSearch = () => {
   return (
